@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+    
+    <style>
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin : 0;
+            height : 100vh; 
+            display : flex;
+            flex-direction : column;
+            justify-content : center;
+        }
+
+        .main {
+            display : flex;
+            height : 370px;
+            padding-left : 3em;
+            padding-right : 3em;
+            background-color : #243b53;
+            gap: 3em;
+        }
+        
+        .left-selection {
+            flex-grow : 1;
+            background-color : #a8d3d3; /* Fixed: Cleaned up double semicolon */
+        }
+
+        .right-selection {
+            display : flex;
+            width : 10em;
+            flex-direction : column;
+            justify-content : center;
+            background-color : greenyellow;
+            padding-left : 1em;
+            padding-right : 1em;
+            gap : 1em;
+        }
+        
+        .items {
+            height : 100px;
+            background-color : red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="left-selection"></div>
+        <div class="right-selection">
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+        </div>
+    </div>
+
+</body>
+</html>
