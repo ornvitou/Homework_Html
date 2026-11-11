@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        
+        *{
+            box-sizing: border-box;
+        }
+        
+        body{
+            margin: 0 auto;
+            padding:40px;
+            background-color: #fff;
+        }
+
+        .grid{
+            max-width: 1000px;
+            margin:0 auto;
+            padding: 10px;
+            background: #333;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(4,120px);
+            grid-gap: 20px;
+        }
+        
+        .items{
+            background: lightseagreen;
+            color: white;
+            font-size: 20px;
+            padding: 4px;
+            border-radius: 5px;
+            border: 2px solid black;
+        }
+        
+        .a{
+            grid-column:1/4;
+        }
+        
+        .b{
+            grid-column:1;
+            grid-row:2/4;
+        }
+        
+        .c{
+            grid-column:2;
+            grid-row: 2;
+        }
+        
+        .d{
+            grid-column:3;
+            grid-row: 2;
+        }
+        
+        .e{
+            grid-column:2/4;
+            grid-row:3;
+        }
+        
+        .f{
+            grid-column:1/4;
+            grid-row:4;
+        }
+        
+        </style>
+
+<body>
+    
+    <div class = "grid">
+        <div class = "items a">A</div>
+        <div class = "items b">B</div>
+        <div class = "items c">C</div>
+        <div class = "items d">D</div>
+        <div class = "items e">E</div>
+        <div class = "items f">F</div>
+    </div>
+</body>
+</head>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 2</title>
+    <style>
+      
+      * {
+        box-sizing: border-box;
+      }
+
+      body{
+        margin: 0;
+        padding: 35px;
+        background: #f5f4fa;
+        font-family: Arial, sans-serif;
+      }
+
+      .cards{
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 14px;
+        margin: 0 auto;
+      }
+
+      .card{
+        min-height: 410px;
+        background: #fff;
+        padding: 14px;
+        border-radius: 7px;
+        box-shadow: 0 2px 7px rgba(0, 0, 0, 0.13);
+        display: grid;
+        grid-template-rows: auto auto 1fr auto;
+        gap: 14px;
+      }
+
+      .span2 {
+        grid-column: span 2;
+      }
+
+      .ph {
+        height: 130px;
+        background: #ccc;
+        color: #999;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+      }
+
+      .span2 .ph{
+        height: 230px;
+        font-size: 30px;
+      }
+
+      .card h3,.card p {
+        margin: 0;
+      }
+
+      .card p{
+        font-size: 14px;
+      }
+
+      .card button {
+        border: 0;
+        border-radius: 7px;
+        background: #8c8a82;
+        color: white;
+        padding: 8px;
+        text-align: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="cards">
+      <div class="card span2">
+        <div class="ph">300 x 200</div>
+        <h3>Card Title</h3>
+        <p>This is a short description about the card. It explains what the card is about in a few sentences.</p>
+        <button>Action</button>
+      </div>
+
+      <div class="card">
+        <div class="ph">300 x 200</div>
+        <h3>Card Title</h3>
+        <p>This is a short description about the card. It explains what the card is about in a few sentences.</p>
+        <button>Action</button>
+      </div>
+
+      <div class="card">
+        <div class="ph">300 x 200</div>
+        <h3>Card Title</h3>
+        <p>This is a short description about the card. It explains what the card is about in a few sentences.</p>
+        <button>Action</button>
+      </div>
+
+      <div class="card">
+        <div class="ph">300 x 200</div>
+        <h3>Card Title</h3>
+        <p>This is a short description about the card. It explains what the card is about in a few sentences.</p>
+        <button>Action</button>
+      </div>
+
+      <div class="card">
+        <div class="ph">300 x 200</div>
+        <h3>Card Title</h3>
+        <p>This is a short description about the card. It explains what the card is about in a few sentences.</p>
+        <button>Action</button>
+      </div>
+
+      <div class="card span2">
+        <div class="ph">300 x 200</div>
+        <h3>Card Title</h3>
+        <p>This is a short description about the card. It explains what the card is about in a few sentences.</p>
+        <button>Action</button>
+      </div>
+
+      <div class="card">
+        <div class="ph">300 x 200</div>
+        <h3>Card Title</h3>
+        <p>This is a short description about the card. It explains what the card is about in a few sentences.</p>
+        <button>Action</button>
+      </div>
+
+      <div class="card">
+        <div class="ph">300 x 200</div>
+        <h3>Card Title</h3>
+        <p>This is a short description about the card. It explains what the card is about in a few sentences.</p>
+        <button>Action</button>
+      </div>
+    </div>
+  </body>
+</html>
