@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Exercise 4</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: ArZial, Helvetica, sans-serif;
+        }
+
+        .wrapper {
+            background: rgb(236, 254, 208);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .small {
+            display: none;
+        }
+
+        .big {
+            display: inline;
+        }
+
+        @media (max-width: 350px) {
+
+            .wrapper {
+                background: tomato;
+            }
+
+            .big {
+                display: none;
+            }
+
+            .small {
+                display: inline;
+            }
+
+        }
+
+        .wrapper-clamp{
+            margin-top: 10px;
+            padding: 5px;
+            background-color: gray;
+        }
+
+        .content-clam{
+            background-color: rgb(175, 226, 72);
+            width: clamp(300px, 100%, 800px);
+            height: 300px;
+            margin: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="content">
+            <span class="small">I'm SMALL 😮</span>
+            <span class="big">I'm BIG 😮</span>
+        </div>
+    </div>
+
+    <div class="wrapper-clamp">
+        <div class ="content-clam"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise3</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            gap: 10px;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .content-area {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        main {
+            background-color: #eeeeee;
+            padding: 20px;
+            flex: 1;
+        }
+
+        aside {
+            background-color: #dddddd;
+            padding: 20px;
+            flex: 1;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 600px){
+
+            .container {
+                padding: 20px;
+            }
+
+            .content-area {
+                flex-direction: column;
+            }
+
+            main {
+                flex: 1;
+            }
+
+            aside {
+                flex: 1;
+            }
+
+            header,
+            footer {
+                padding: 20px;
+            }
+        }
+
+        @media (min-width: 601px){
+
+            .container {
+                padding: 20px;
+            }
+
+            main {
+                flex: 1;
+            }
+
+            aside {
+                flex: 1;
+            }
+
+            header,
+            footer {
+                padding: 20px;
+            }
+        }
+
+        @media (min-width: 900px){
+
+            .container {
+                max-width: 1200px;
+                margin: auto;
+                padding: 30px;
+            }
+
+            header,
+            footer {
+                padding: 30px;
+            }
+
+            main {
+                flex: 2;
+            }
+
+            aside {
+                flex: 1;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>Responsive Header</header>
+        <div class="content-area">
+            <main>Main Content</main>
+            <aside>Sidebar</aside>
+        </div>
+
+        <footer>
+            Footer
+        </footer>
+
+    </div>
+
+</body>
+</html>
