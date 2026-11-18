@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkbox Checked Style</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .choice{
+            margin: 10px 0;
+        }
+
+        label{
+            color: black;
+        }
+        input[type="checkbox"]:checked + label{
+            color: green;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h2>What do you want to learn?</h2>
+
+    <div class="choice">
+        <input type="checkbox" id="html">
+        <label for="html">HTML</label>
+    </div>
+
+    <div class="choice">
+        <input type="checkbox" id="css">
+        <label for="css">CSS</label>
+    </div>
+
+    <div class="choice">
+        <input type="checkbox" id="javascript">
+        <label for="javascript">JavaScript</label>
+    </div>
+
+</body>
+</html>
